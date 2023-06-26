@@ -1,0 +1,107 @@
+.watchBody {
+    width: 300px;
+    height: 300px;
+    background-color: #151538;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+}
+
+.watchTimer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 4.3em;
+    letter-spacing: 4px;
+}
+
+.sessionBreak {
+    width: 13em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    padding: 20px;
+    background-color: #151538;
+    display: flex;
+    font-size: 1em;
+    justify-content: space-around;
+    color: white;
+    border: 1px solid orange;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #222242;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 10px 10px rgba(255, 255, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 0, 0);
+    }
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+
+
+.h {
+    display: inline-block;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.clockSetting {
+    position: absolute;
+    right: 10em;
+    top: 2.8em;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.clockMenu {
+    border-radius: 2em;
+    padding: 1em;
+    position: absolute;
+    background-color: #151538;
+    color: white;
+    right: 27em;
+    top: 13em;
+    width: 10em;
+    height: 6em;
+    transition: all .3s ease-in-out;
+}
+
+.clockMenu.hidden {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.clockMenu.visible {
+    opacity: 1;
+    transform: translateY(10px);
+}
